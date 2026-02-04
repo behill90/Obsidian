@@ -1,0 +1,30 @@
+# Emoji Legend (Daily Log)
+
+Use these at the start of log lines, you must set these in keyboard shortcuts
+
+- 🧠 Deep work / build / analysis (maker time)
+	- dw
+
+- 🧯 On-call / incident / interrupt (pager + fire drills)
+	- oc
+
+- 🧭 Unblocking / helping others (reviews, pairing, access, guidance)
+	- -unblock
+
+- 🔧 Ops / maintenance / hygiene (keeping systems healthy)
+	- ops
+
+- 🗣️ Meetings / comms (syncs, stakeholder updates)
+	- *🗣️ meet*
+
+- 📌 Decision / direction set (record the “why”)
+	- 📌 *:dec*
+
+- ⏳ Waiting / blocked (external dependency, async response)
+	- wait
+
+
+
+(Optionals if you want later)
+- ✅ Shipped / done
+- 📎 Artifact created (PR, doc, runbook, dashboard)

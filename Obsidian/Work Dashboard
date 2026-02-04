@@ -1,0 +1,44 @@
+## 🔥 Action Required
+```dataview
+TASK
+FROM "Daily Notes"
+WHERE !completed AND !contains(text, "#waiting")
+SORT
+  contains(text, "#P1") desc,
+  contains(text, "#P2") desc,
+  contains(text, "#P3") desc,
+  file.day desc
+
+```
+
+
+## ⏳ Waiting on others
+
+```dataview
+TASK
+FROM "Daily Notes"
+WHERE !completed AND contains(text, "#waiting")
+SORT file.day desc
+
+```
+
+
+## Aging Action Items - P1 over 3 days
+
+```dataview
+TASK
+FROM "Daily Notes"
+WHERE !completed
+  AND contains(text, "#p1")
+  AND file.day <= date(today) - dur(3 days)
+SORT file.day asc
+
+```
+
+## 🔁 Carryover Radar
+```dataview
+TASK
+FROM "Daily Notes"
+WHERE !completed AND file.day <= date(today) - dur(7 days)
+SORT file.day asc
+```
